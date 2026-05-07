@@ -111,10 +111,10 @@ if (contactForm) {
     }
 
     const profile = {
-      email,
-      first_name: firstName,
-      last_name: lastName,
-      organization: company,
+      $email: email,
+      $first_name: firstName,
+      $last_name: lastName,
+      $organization: company,
     };
 
     klaviyoIdentify(profile);
