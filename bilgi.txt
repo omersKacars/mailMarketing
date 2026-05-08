@@ -1,0 +1,46 @@
+E-POSTA PAZARLAMA AJANSI - MÜŞTERİ İŞ AKIŞ ŞEMASI
+🛠️ AŞAMA 1: KEŞİF VE TEKNİK KURULUM (ONBOARDING)
+Müşterinin İsteği/Sorunu: "Sitemde trafik var ama satışa dönmüyor. Maillerim spama düşüyor. Mail üzerinden nasıl satış yapacağımı bilmiyorum."
+Platformlara Göre Bizim Yapacaklarımız (Teknik Entegrasyon):
+Sadece WordPress (Hizmet/Blog Sitesi): Klaviyo eklentisi kurulur. Public API Key girilir. Lead (müşteri adayı) toplamak için Form eklentileriyle (Örn: WPForms) Klaviyo birbirine bağlanır.
+WooCommerce (E-ticaret): Klaviyo WooCommerce eklentisi kurulur. Sadece site değil; geçmiş siparişler, ürün kataloğu ve sepet verileri Klaviyo'ya senkronize edilir (Senin manuel yazdığın "Added to Cart" verisini bu eklenti otomatik çeker).
+Wix / Shopify: Bu platformların kendi "App Market" (Uygulama Mağazası) içinden Klaviyo uygulaması tek tıkla yüklenir.
+Bizim Yapmamız Gereken Ekstra Kurulumlar:
+Gönderici Domain (Dedicated Sending Domain) kurulumu yapılır (Spama düşmemek için DNS ayarları).
+Varsa müşterinin eski e-posta aracındaki (Mailchimp vb.) liste dışa aktarılıp (Export) Klaviyo’ya aktarılır (Import).
+🧲 AŞAMA 2: LİSTE BÜYÜTME (LEAD GENERATION)
+Müşterinin İsteği/Sorunu: "Elimde hiç müşteri maili yok, kimseye mail atamıyorum." veya "İnsanlar siteme girip hemen çıkıyor."
+Bizim Yapmamız Gerekenler:
+Welcome Popup (Hoş Geldin Ekranı): Siteye ilk kez girenlere 5. saniyede çıkan "Bültene üye ol, ilk siparişinde %10 indirim kazan" popup'ı tasarlanır.
+Exit-Intent Popup (Çıkış Niyeti): Kullanıcı fareyi sitenin kapatma tuşuna (X) doğru götürdüğünde aniden çıkan "Dur! Gitmeden önce bu ücretsiz rehberi indir" penceresi kurulur.
+Teaser (Göz Kırpan Buton): Popup'ı kapatanlar için ekranın sol altında her zaman duran küçük bir "İndirim Kodunu Al" balonu bırakılır.
+⚙️ AŞAMA 3: OTOMASYONLAR (FLOWS - PARA BASAN KISIM)
+Müşterinin İsteği/Sorunu: "Sepette çok ürün bırakılıyor. İlk kez gelen müşteriye kendimizi tanıtamıyoruz. Eski müşteriler bizden bir daha alışveriş yapmıyor."
+Bizim Yapmamız Gerekenler (Temel 4 Akışın Kurulumu):
+Welcome Series (Hoş Geldin Serisi): Popup'tan mailini bırakanlara anında indirim kodunu içeren mail atılır. 2 gün sonra "Biz Kimiz?" maili, 4 gün sonra "En çok satan hizmetlerimiz" maili otomatik gider.
+Abandoned Cart (Terk Edilmiş Sepet): (WooCommerce/Wix için) Sepete ürün atıp almayanlara 2 saat sonra birinci hatırlatma, 24 saat sonra indirim kodu içeren ikinci hatırlatma kurulur.
+Browse Abandonment (Göz Atma Terki): Ürüne/Hizmete 2 defa bakıp sepete bile eklemeyen kişiye "Baktığın o ürünü beğendin mi? İşte detayları" maili kurulur.
+Win-Back (Geri Kazanım): Son 90 gündür siteden hiçbir şey almamış kişilere "Seni özledik, sana özel bir teklifimiz var" kurgusu yapılır.
+🎯 AŞAMA 4: SEGMENTASYON (KİTLEYİ BÖLME)
+Müşterinin İsteği/Sorunu: "Ben herkese aynı maili atıyorum ama açılma oranlarım çok düşük (%5). İnsanlar abonelikten çıkıyor."
+Bizim Yapmamız Gerekenler (Klaviyo Beyni):
+Müşterinin kümülatif listesini Klaviyo paneli üzerinden şu segmentlere ayırırız:
+Engaged (Aktifler): Son 30 günde mail açmış veya siteye girmiş "Sıcak Müşteriler" (En çok satışı bunlar yapar).
+VIP Müşteriler: Bugüne kadar 3'ten fazla alışveriş yapmış veya 5.000 TL üzeri harcamış kişiler (Bunlara özel lüks kampanyalar çıkılır).
+Window Shoppers (Vitrinciler): Siteye hep giren ama 0 alışverişi olanlar (Bunlara agresif indirim verilir).
+Unengaged (Soğumuşlar): Son 6 aydır hiçbir maili açmayanlar (Spama düşmemek için bunlara mail atmayı durdururuz).
+🚀 AŞAMA 5: KAMPANYALAR (MANUEL GÖNDERİMLER)
+Müşterinin İsteği/Sorunu: "Önümüzdeki hafta Sevgililer Günü var. Ya da yeni bir yazılım eğitimi başlatıyorum, bunu duyurmam lazım."
+Bizim Yapmamız Gerekenler:
+Tasarım: Sürükle-bırak editörüyle kampanyaya uygun, mobil uyumlu, şık bir mail tasarlanır.
+A/B Testi: Mailin konu başlığının 2 farklı versiyonu yazılır (Örn: A: Sevgililer Günü İndirimi Başladı! vs. B: Ahmet, %20 İndirimin İçeride Seni Bekliyor).
+Smart Send Time (Akıllı Gönderim): Mail, "Herkesin maili açma ihtimalinin en yüksek olduğu saatte gönder" seçeneğiyle zamanlanır.
+📊 AŞAMA 6: İŞİN TAKİBİ, RAPORLAMA VE OPTİMİZASYON
+Müşterinin İsteği/Sorunu: "Sana aylık bir ajans ücreti ödüyorum. Peki sen bana ne kadar para kazandırdın?"
+Bizim Yapmamız Gerekenler (Aylık Rutin):
+Klaviyo Dashboard Analizi: Toplam gelirin yüzde kaçı e-postadan gelmiş? (Başarılı bir hesapta bu oran %20 ile %40 arasındadır).
+Aylık Rapor Sunumu: Müşteriye şu veriler sunulur:
+Bu ay kaç yeni mail abonesi kazandık?
+Otomasyonlar (Flows) kaç para kazandırdı?
+Manuel kampanyalar kaç para kazandırdı?
+Optimizasyon: "Terk edilmiş sepet mailinin açılma oranı %15'e düşmüş, başlığını değiştirelim" gibi stratejik iyileştirmeler yapılır.

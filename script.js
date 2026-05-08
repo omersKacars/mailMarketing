@@ -109,6 +109,7 @@ function closeCheckoutModal() {
   checkoutModal.classList.remove("flex");
 }
 
+
 function setupBehaviorTracking() {
   window.addEventListener("scroll", () => {
     if (deepScrollTracked) {
