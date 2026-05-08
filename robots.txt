@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://omerskacars.github.io/mailMarketing/sitemap.xml
+Host: omerskacars.github.io
